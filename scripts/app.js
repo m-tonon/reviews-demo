@@ -30,7 +30,6 @@ const reviews = [
   },
 ];
 
-
 //select items
 const img = document.getElementById('person-img');
 const author = document.getElementById('author');
@@ -63,8 +62,18 @@ function showPerson(person) {
 
 nextBtn.addEventListener('click', () => {
   currentItem++;
-  if (currentItem > reviews.length - 1){
+  if (currentItem > reviews.length - 1) {
     currentItem = 0;
+  }
+  showPerson(currentItem);
+});
+
+// display prev person
+
+prevBtn.addEventListener('click', () => {
+  currentItem--;
+  if (currentItem < 0) {
+    currentItem = reviews.length - 1;
   }
   showPerson(currentItem);
 });
