@@ -14,7 +14,7 @@ body {
   font-size: 0.875rem;
 }
 
-h2 {
+h2, h4 {
   letter-spacing: var(--spacing);
   text-transform: capitalize;
   line-height: 1.25;
@@ -31,6 +31,11 @@ p {
 @media screen and (min-width: 800px) {
   h2 {
     font-size: 2.5rem;
+    line-height: 1;
+  }
+
+  h4 {
+    font-size: 0.875rem;
     line-height: 1;
   }
 
